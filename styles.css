@@ -92,3 +92,30 @@ form button {
 form button:hover {
   background-color: #3b813d;
 }
+
+.button-link {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: #45a049;
+}
+
+.by-solipago {
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: right;
+}
+
+.form-navigation{
+  text-align: center;
+}
