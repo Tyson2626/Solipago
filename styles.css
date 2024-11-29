@@ -68,11 +68,19 @@ footer a:hover {
   color: #3b813d;
 }
 form {
+<<<<<<< HEAD
   background-color: #464750e3;
   padding: 50px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 400px;
+=======
+    background-color: #898eade3;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+>>>>>>> parent of 744c52a (agregando boton)
 }
 form input,
 form button,
@@ -95,6 +103,7 @@ form button:hover {
   background-color: #3b813d;
 }
 
+<<<<<<< HEAD
 .button-link {
   padding: 10px 20px;
   background-color: #4caf50;
@@ -133,3 +142,5 @@ form button:hover {
   justify-content: flex-start;
   width: 300px;
 }
+=======
+>>>>>>> parent of 744c52a (agregando boton)
