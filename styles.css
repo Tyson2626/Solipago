@@ -1,118 +1,135 @@
-body { 
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #313335;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #313335;
 }
 .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .services {
-    flex: 3;
+  flex: 3;
 }
 .form-container {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 header {
-    background: #110430;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background: #110430;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 .service {
-    background: #d4d5df;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(17, 4, 48, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+  background: #d4d5df;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(17, 4, 48, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .service:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .service h2 {
-    color: #333;
+  color: #333;
 }
 .service p {
-    text-align: center;
+  text-align: center;
 }
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #170b42;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: #170b42;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 footer div {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 footer a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
 }
 footer a:hover {
-    color: #3b813d;
+  color: #3b813d;
 }
 form {
-    background-color: #464750e3;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+  background-color: #464750e3;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
 }
-form input, form button, form label {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+form input,
+form button,
+form label {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 form button {
-    background-color: #281763;
-    color: #eeeef1;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
+  background-color: #281763;
+  color: #eeeef1;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
 }
 form button:hover {
-    background-color: #3b813d;
+  background-color: #3b813d;
 }
 
-    .button-link {
-        padding: 10px 20px;
-        background-color: #4CAF50;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        display: inline-block;
-        text-align: center;
-        cursor: pointer;
-    }
-    
-    .button-link:hover {
-        background-color: #45a049;
-    }
-    
-    .by-solipago {
-        bottom: 10px;
-        right: 10px;
-        font-size: 14px;
-        color: #aaa;
-        text-align: right;
-    }
-    
+.button-link {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: #45a049;
+}
+
+.by-solipago {
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: right;
+  flex: 1;
+}
+
+.form-navigation{
+    text-align: center;
+}
+
+.contact-link{
+  flex: 0.5;
+  padding-right: 400px;
+}
+
+.p-info{
+  flex: 0.5;
+  justify-content: flex-start;
+  width: 300px;
+}
