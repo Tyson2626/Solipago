@@ -123,7 +123,7 @@ form button:hover {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Para separar el logo del título */
+ justify-content: center;/* Para separar el logo del título */
   padding: 10px 20px; /* Espaciado interno para que los elementos no toquen los bordes */
   position:static;
   background: #110430; /* Mantener el fondo del header */
@@ -133,6 +133,7 @@ header {
   max-width: 70px; /* Ajustar el tamaño del logo */
   margin-right: 20px; /* Espaciado respecto al contenido a la derecha */
   border-radius: 50%;
+  
 }
 
 @media (max-width: 768px) {
