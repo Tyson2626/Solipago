@@ -119,3 +119,24 @@ form button:hover {
 .form-navigation{
   text-align: center;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Para separar el logo del título */
+  padding: 10px 20px; /* Espaciado interno para que los elementos no toquen los bordes */
+  position:static;
+  background: #110430; /* Mantener el fondo del header */
+}
+
+.main-image {
+  max-width: 70px; /* Ajustar el tamaño del logo */
+  margin-right: 20px; /* Espaciado respecto al contenido a la derecha */
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .main-image {
+    max-width: 60px; /* Tamaño más pequeño en pantallas pequeñas */
+  }
+}
