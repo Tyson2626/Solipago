@@ -18,7 +18,7 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Permite que el contenedor ocupe el espacio disponible */
+  flex-grow: 1;
 }
 
 /* Services Section */
@@ -57,29 +57,34 @@ header {
   background: #110430;
   color: #fff;
   position: relative;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
 }
 
+/* Logo Container */
 .logo-container {
   position: absolute;
   left: 20px;
+  top: 50%; /* Centra el logo verticalmente */
+  transform: translateY(-50%);
 }
 
 /* Logo Animation */
 .main-image {
   max-width: 70px;
   border-radius: 50%;
-  transition: transform 0.5s ease; /* Transición suave de 0.5 segundos */
+  transition: transform 0.5s ease;
 }
 
 .main-image:hover {
-  transform: rotate(360deg); /* Gira el logo 360 grados */
+  transform: rotate(360deg);
 }
 
+/* Header Title */
 header h1 {
   margin: 0;
   font-size: 30px;
   text-align: center;
-  z-index: 1;
+  flex: 1; /* Hace que el título ocupe el espacio restante */
 }
 
 /* Footer */
@@ -91,7 +96,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto; /* Empuja el footer hacia abajo */
+  margin-top: auto;
 }
 
 footer div {
@@ -120,7 +125,7 @@ footer a:hover {
 
 form {
   background-color: #898eade3;
-  padding: 50px;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -181,16 +186,22 @@ form button:hover {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 10px;
+    text-align: center;
+    padding: 20px;
   }
 
   .logo-container {
     position: static;
     margin-bottom: 10px;
+    transform: none;
   }
 
   .main-image {
     max-width: 60px;
+  }
+
+  header h1 {
+    font-size: 24px;
   }
 
   .service {
@@ -199,7 +210,7 @@ form button:hover {
   }
 
   form {
-    padding: 30px;
+    padding: 20px;
   }
 
   footer div {
