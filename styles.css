@@ -1,31 +1,31 @@
+/* General Styles */
 body { 
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #313335;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+/* Container */
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1; /* Permite que el contenedor ocupe el espacio disponible */
 }
+
+/* Services Section */
 .services {
   flex: 3;
 }
-.form-container {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-header {
-  background: #110430;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-}
+
 .service {
   background: #d4d5df;
   margin: 20px 0;
@@ -34,16 +34,55 @@ header {
   box-shadow: 0 0 10px rgba(17, 4, 48, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .service:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .service h2 {
   color: #333;
 }
+
 .service p {
   text-align: center;
 }
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  background: #110430;
+  color: #fff;
+  position: relative;
+}
+
+.logo-container {
+  position: absolute;
+  left: 20px;
+}
+
+/* Logo Animation */
+.main-image {
+  max-width: 70px;
+  border-radius: 50%;
+  transition: transform 0.5s ease; /* Transición suave de 0.5 segundos */
+}
+
+.main-image:hover {
+  transform: rotate(360deg); /* Gira el logo 360 grados */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -52,28 +91,42 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: auto; /* Empuja el footer hacia abajo */
 }
+
 footer div {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 10px;
 }
+
 footer a {
   text-decoration: none;
   font-size: 16px;
   color: #fff;
 }
+
 footer a:hover {
   color: #3b813d;
 }
+
+/* Form Styles */
+.form-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 form {
   background-color: #898eade3;
   padding: 50px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
+
 form input, form button, form label {
   display: block;
   width: 100%;
@@ -82,6 +135,7 @@ form input, form button, form label {
   border-radius: 4px;
   border: 1px solid #ccc;
 }
+
 form button {
   background-color: #281763;
   color: #eeeef1;
@@ -89,10 +143,16 @@ form button {
   cursor: pointer;
   border-radius: 8px;
 }
+
 form button:hover {
   background-color: #3b813d;
 }
 
+.form-navigation {
+  text-align: center;
+}
+
+/* Button Link */
 .button-link {
   padding: 10px 20px;
   background-color: #4CAF50;
@@ -108,6 +168,7 @@ form button:hover {
   background-color: #45a049;
 }
 
+/* By Solipago */
 .by-solipago {
   bottom: 10px;
   right: 10px;
@@ -116,28 +177,33 @@ form button:hover {
   text-align: right;
 }
 
-.form-navigation{
-  text-align: center;
-}
-
-header {
-  display: flex;
-  align-items: center;
- justify-content: center;/* Para separar el logo del título */
-  padding: 10px 20px; /* Espaciado interno para que los elementos no toquen los bordes */
-  position:static;
-  background: #110430; /* Mantener el fondo del header */
-}
-
-.main-image {
-  max-width: 70px; /* Ajustar el tamaño del logo */
-  margin-right: 20px; /* Espaciado respecto al contenido a la derecha */
-  border-radius: 50%;
-  
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo-container {
+    position: static;
+    margin-bottom: 10px;
+  }
+
   .main-image {
-    max-width: 60px; /* Tamaño más pequeño en pantallas pequeñas */
+    max-width: 60px;
+  }
+
+  .service {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  form {
+    padding: 30px;
+  }
+
+  footer div {
+    flex-direction: column;
+    gap: 10px;
   }
 }
